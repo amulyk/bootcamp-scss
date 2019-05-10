@@ -38,22 +38,24 @@ body {
         cursor: pointer;
         background-color: $color-3;
     }
-
     &.medium {
         font-size :18px;
         padding: 14px 47px;
     }
-    &.large {
-        font-size :26px;
-        padding: 24px 94px;
-    }
-    &.x-large{
-        font-size :36px;
-        padding: 27px 102px;
+    &.radiusg{
+        &-3{
+            border-radius: 3px;
+        }
+        &-7{
+            border-radius: 7px;
+        }
+        &-12{
+            border-radius: 12px;
+        }
+        &-20{
+            border-radius: 20px;
+        }
     }
 }
 
-.btn:hover {
-    background-color: $color-3
-}
 
