@@ -1,1 +1,73 @@
-@import './components/header/index.scss';
+
+$color-1:#21c2f8;
+$color-2:#fff;
+$color-3:#222533;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+.row {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    justify-content: center;
+    .btn{
+        margin-right: 30px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.btn{
+    background-color:$color-1;
+    color: $color-2;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 14px;
+    padding: 9px 37px;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    border: none;
+    cursor: pointer;
+
+    &.medium{
+        font-size: 18px;
+        padding: 14px 46px;
+    }
+    &.large{
+        font-size: 26px;
+        padding: 23px 93px 23px 94px;
+    }
+    &.xlarge{
+        font-size: 36px;
+        padding: 27px 102px 27px 103px;
+    }
+    &:hover{
+        background-color: $color-3;
+    }
+    
+    &.round{
+        &-3{
+        border-radius: 3px;
+        }
+        &-7{
+            border-radius: 7px;
+        }
+        &-12{
+            border-radius: 12px;
+        }
+        &-20{
+            border-radius: 20px;
+        }
+        
+    }
+}
+
